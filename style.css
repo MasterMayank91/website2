@@ -1,0 +1,242 @@
+
+/* bb0000 aa0000 */
+*
+{
+    text-decoration: none;
+    user-select: none;
+    font:16px arial;
+    color:#eee;
+    outline: none;
+    padding:0;
+    margin:0;
+}
+
+main
+{
+    display: grid;
+}
+span, #product
+{
+    height: auto;
+    background: url(../rtx/c4.jpg) no-repeat;
+    background-size:cover;
+}
+header
+{
+    background:#aa0000;
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+    grid-template-rows:1fr 1fr;
+}
+h1
+{
+    grid-column:1/2;
+    grid-row:1/2;
+    font:30px forte;
+    color:#fff;
+    margin: 10px 50px;
+}
+menu
+{
+    grid-column:1/2;
+    grid-row:2/3;
+    margin:20px;
+}
+.symbol
+{   
+    grid-row:1/3;
+    grid-column: 2/3;
+    width:100px;
+    height:100px;
+    justify-self: center;
+}
+
+footer
+{
+    height: 5vh;
+    background:#aa0000;
+    color:#fff;
+    line-height: 5vh;
+    text-align: center;
+}
+.logo
+{
+    margin-top:20px;
+    width:150px;
+    height:150px;
+}
+.social
+{
+    display: inline-table;
+    width:600px;
+    margin:20px;
+}
+.icon
+{
+    margin:20px;
+    width: 50px;
+    height: 50px;
+    background:#eee;
+}
+.icon:hover
+{
+    background:#aa0011;
+}
+h2
+{
+    color:#aa0000;
+    font:30px forte;
+    margin: 10px 50px;
+}
+p
+{
+    margin:50px;
+}
+
+a
+{
+    font:bold 16px arial;
+    color:white;
+    padding: 10px 20px;
+}
+a:hover
+{
+    background:#aa0011;
+    border:1px dotted #eee;
+}
+
+/* Home */
+
+#home
+{
+    height: 90vh;
+    text-align: center;
+}
+a[name="login"]
+{
+    background:#aa0000;
+    padding:10px 30px ;
+}
+/* About */
+
+#about
+{
+    height: 90vh;
+    display: flex;
+}
+
+img[name="owner"]
+{
+    margin:30px 50px;
+    width:400px;
+    height: 500px;
+    object-fit: cover;
+}
+.box button
+{
+    margin:0 50px;
+}
+/* Schedule */
+
+#schedule
+{
+    height: 100vh;
+}
+summary
+{
+    background:#aa0000;
+    padding: 20px;
+}
+
+/* Login */
+
+#login
+{
+    background:url(../rtx/c4.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    place-content:space-around;
+    align-items: center;
+}
+
+form[name="login"]
+{
+    background:rgba(0,0,0,0.7);
+    width:400px;
+    height: 500px;
+}
+h3
+{
+    font:20px arial;
+    color:#eee;
+    margin:20px;
+}
+.field
+{
+    caret-color: #aa0000;
+    margin:10% 10%;
+    padding:5px;
+    width: 80%;
+    background:transparent;
+    border:none;
+    border-bottom: 1px solid orange;
+}
+label:last-child
+{
+    margin:15px 40px;
+}
+.button
+{
+    padding: 10px;
+    width:40%;
+    border:none;
+    background:#aa0000;
+}
+.button:hover
+{
+    background:#aa0011;
+    box-shadow:1px 1px 1px #333;
+}
+.form
+{
+    width:400px;
+    height: 500px;
+    background: rgba(0,0,0,0.5) url(../rtx/c5.jpg);
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+/* Service */
+#service
+{
+    height: 100vh;
+    display:grid;
+    grid-template-rows: 10vh 85vh 10vh;
+}
+#header
+{
+    display: flex;
+    justify-content: space-between;
+    background:#aa0000;
+}
+#product
+{
+    scroll-behavior: smooth;
+    overflow: auto;
+    display:flex;
+    flex-flow: row nowrap;
+}
+.serve
+{
+    margin:20px;
+    width:400px;
+    height: 600px;
+    background:#000;
+}
+.serve img
+{
+    width:400px;
+    height: 300px;
+    object-fit: cover;
+}
